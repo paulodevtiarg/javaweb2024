@@ -26,7 +26,7 @@ public class HelloController {
 	
 	@GetMapping("/hello")
 	public ModelAndView hello() {
-		ModelAndView mv = new ModelAndView("hello"); //nome da view
+		ModelAndView mv = new ModelAndView("hello");
 		mv.addObject("nome", "Maria");
 		
 		
