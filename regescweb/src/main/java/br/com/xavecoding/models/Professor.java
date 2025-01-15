@@ -2,6 +2,8 @@ package br.com.xavecoding.models;
 
 import java.math.BigDecimal;
 
+import org.springframework.core.style.ToStringCreator;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -77,6 +79,17 @@ public class Professor {
 		this.statusProfessor = statusProfessor;
 	}
 	
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Professor {"+
+				"id = "+id+
+				", nome : "+nome+
+				", salario: "+salario+
+				", statusProfessor: "+statusProfessor+
+				"}";
+	}
 	
 	
 
